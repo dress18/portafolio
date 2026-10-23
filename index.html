@@ -3,28 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Andrés Felipe Gómez Jiménez, desarrollador de software.">
     <title>Andrés Gómez - Mi portafolio</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <img src="/img/icono.png" alt="Icono taza de café">
-        <a href="/index.html">Andrés Gómez</a>
+    <header class="site-header">
+        <div class="brand">
+            <img src="img/icono.png" alt="Icono taza de café" width="32" height="32">
+            <a href="index.html">AG</a>
+        </div>
 
-        <nav>
+        <nav aria-label="Navegación principal">
             <ul>
-                <li><a href="">Sobre mí</a></li>
-                <li><a href="">Mis proyectos</a></li>
-                <li><a href="">Educación</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="./pages/proyectos.html">Mis proyectos</a></li>
+                <li><a href="#educacion">Educación</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="content">
-        
+        <section class="hero" id="presentacion">
+            <h1>Andrés Gómez</h1>
+            <p class="hero-role">Piensa, programa y crea.</p>
+            <p class="hero-subrole">Desarrollador de software</p>
+        </section>
+
+        <section class="about-me section" id="sobre-mi">
+            <div class="links-info">
+                <ul>
+                    <li><a href="mailto:dev.andrez18@gmail.com">Contáctame</a></li>
+                    <li><a href="#">CV</a></li>
+                    <li><a href="https://github.com/dress18" target="_blank" rel="noopener">GitHub</a></li>
+                </ul>
+            </div>
+
+            <div class="info-about-me">
+                <div class="about-text">
+                    <h2>Sobre mí</h2>
+                    <p>
+                        Estudiante de Ingeniería de Software y <strong>Coder</strong> en
+                        <a href="https://riwi.io" target="_blank" rel="noopener">Riwi</a>,
+                        con experiencia en el desarrollo de <strong>SaaS</strong>,
+                        especializado en frameworks como <strong>Astro</strong>,
+                        <strong>React</strong> y <strong>Tailwind CSS</strong>, y bases de
+                        datos como <strong>MySQL</strong> y <strong>Supabase</strong>.
+                    </p>
+                    <a class="btn" href="#proyectos">Ver proyectos</a>
+                </div>
+                <img src="img/foto.jpg" alt="Foto de Andrés Gómez" width="480" height="480">
+            </div>
+        </section>
+
+        <section class="my-projects section" aria-label="Datos destacados">
+            <div class="num-projects">
+                <dl>
+                    <div>
+                        <dt><span>+2</span></dt>
+                        <dd>Proyectos destacados</dd>
+                    </div>
+                    <div>
+                        <dt><span>+5</span></dt>
+                        <dd>Proyectos totales</dd>
+                    </div>
+                    <div>
+                        <dt><span>+1</span></dt>
+                        <dd>Año de experiencia</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <section class="section" id="experiencia">
+            <h2>Experiencia</h2>
+
+            <article class="card">
+                <header>
+                    <h3>Desarrollador Front-End Junior</h3>
+                    <p class="meta">Café Digital S.A.S. · 2025 - 2026</p>
+                </header>
+                <p>
+                    Desarrollo de interfaces con HTML semántico, CSS y React,
+                    creación de componentes reutilizables, ajuste de diseños para
+                    celular y trabajo en equipo con Git y GitHub.
+                </p>
+            </article>
+        </section>
+
+        <section class="section" id="proyectos">
+            <h2>Proyectos destacados</h2>
+
+            <div class="projects">
+                <article class="card project">
+                    <img src="img/parchedev.png"
+                         alt="Captura de pantalla de la página principal de ParcheDev"
+                         width="800" height="450">
+                    <div class="project-body">
+                        <h3>ParcheDev</h3>
+                        <p>
+                            Proyecto desarrollado en clase donde construí una página web
+                            para una comunidad de desarrolladores. Practiqué HTML semántico,
+                            organización de secciones y estilos con CSS.
+                        </p>
+                        <a class="btn" href="https://dress18.github.io/parchedev/"
+                           target="_blank" rel="noopener">Ver en vivo</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="educacion">
+            <h2>Educación</h2>
+
+            <article class="card">
+                <h3>Coder en Riwi</h3>
+                <p class="meta">Formación en desarrollo de software</p>
+            </article>
+
+            <article class="card">
+                <h3>Ingeniería de Software</h3>
+                <p class="meta">Institución Universitaria Pascual Bravo · En curso</p>
+            </article>
+        </section>
     </main>
 
-    <footer>
-        <p>Andrés Gómez - Coder en riwi</p>
+    <footer class="site-footer">
+        <p>Andrés Gómez - Coder en Riwi</p>
     </footer>
 </body>
 </html>

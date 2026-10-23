@@ -3,18 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyectos desarrollados por Andrés Felipe Gómez Jiménez.">
     <title>Proyectos - Andrés Gómez</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header class="site-header">
         <div class="brand">
             <img src="img/icono.png" alt="Icono taza de café" width="32" height="32">
-            <a href="index.html">AG</a>
+            <a href="index.html">Andrés Gómez</a>
         </div>
-    </header>
-    <main>
 
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html#sobre-mi">Sobre mí</a></li>
+                <li><a href="index.html#experiencia">Experiencia</a></li>
+                <li><a href="proyectos.html" aria-current="page">Mis proyectos</a></li>
+                <li><a href="index.html#educacion">Educación</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section class="page-title">
+            <h1>Proyectos</h1>
+            <p class="hero-role">Lo que he construido y lo que he practicado.</p>
+        </section>
+
+        <section class="section" aria-label="Lista de proyectos">
+            <div class="projects">
+                <article class="card project">
+                    <img src="img/parchedev.png"
+                         alt="Captura de pantalla de la página principal de ParcheDev"
+                         width="800" height="450">
+                    <div class="project-body">
+                        <h3>ParcheDev</h3>
+                        <p>
+                            Proyecto desarrollado en clase donde construí una página web
+                            para una comunidad de desarrolladores. Practiqué HTML semántico,
+                            organización de secciones y estilos con CSS.
+                        </p>
+                        <!-- TODO: reemplazar por la URL publicada de ParcheDev -->
+                        <a class="btn" href="https://dress18.github.io/parche-dev/"
+                           target="_blank" rel="noopener">Ver en vivo</a>
+                    </div>
+                </article>
+            </div>
+
+            <p class="back-link"><a href="index.html">&larr; Volver al inicio</a></p>
+        </section>
     </main>
+
     <footer class="site-footer">
         <p>Andrés Gómez - Coder en Riwi</p>
     </footer>
